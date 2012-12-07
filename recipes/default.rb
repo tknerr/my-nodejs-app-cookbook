@@ -25,5 +25,7 @@ git "/usr/local/node-apps/webserver" do
 end
 
 
-runit_service "node-daemon"
+runit_service "node-daemon" do
+ action [ :enable, :start ]
+end
 
