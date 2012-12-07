@@ -1,2 +1,12 @@
-chef-handson-nodejs
-===================
+Description
+===========
+
+Requirements
+============
+
+Attributes
+==========
+
+Usage
+=====
+
