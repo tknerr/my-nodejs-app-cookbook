@@ -19,7 +19,7 @@ end
 
 
 git "/usr/local/node-apps/webserver" do
-  repository "https://github.com/tknerr/chef-handson-nodejs-sample.git"
+  repository "https://github.com/tknerr/my-nodejs-app.git"
   reference "master"
   action :sync
 end
