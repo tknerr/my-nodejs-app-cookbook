@@ -13,9 +13,9 @@ Vagrant::Config.run do |config|
     nodejs_config.vm.network :hostonly, "33.33.13.11"
 
     nodejs_config.vm.provision :chef_solo do |chef|
-      chef.cookbooks_path = [ 'cookbooks' ]
-      chef.run_list = [ 
-        "recipe[nodejs::default]" 
+      chef.cookbooks_path = [ 'cookbooks', '.' ]
+      chef.run_list = [
+        "recipe[app-deploy::default]" 
       ]
     end
 
