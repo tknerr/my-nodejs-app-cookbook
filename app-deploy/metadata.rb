@@ -9,3 +9,4 @@ supports "ubuntu"
 
 depends "nodejs", "~> 1.0.1"
 depends "git", "~> 2.0.0"
+depends "runit", "~> 0.16.0" 

@@ -7,8 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "nodejs::default"
-include_recipe "git::default"
+include_recipe "nodejs"
+include_recipe "git"
+include_recipe "runit"
 
 
 directory "/usr/local/node-apps/webserver" do
@@ -22,4 +23,7 @@ git "/usr/local/node-apps/webserver" do
   reference "master"
   action :sync
 end
+
+
+runit_service "node-daemon"
 
